@@ -21,5 +21,16 @@ pipeline{
             }
         }
     }
+    post{
+        always{
+            bat 'echo "Always"'
+        }
+        success{
+            bat 'echo "Build Success Done"'
+        }
+        failure{
+            bat 'echo "Build Failed"'
+        }
+    }
 
 }
