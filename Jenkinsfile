@@ -9,7 +9,7 @@ pipeline{
             steps{
                 bat 'echo "Build Stage"'
                 bat 'javac Test.java'
-                bat 'echo ${VERSION_NAME}'
+                bat "echo ${VERSION_NAME}"
             }
         }
         stage("Test"){
